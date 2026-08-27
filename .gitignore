@@ -1,0 +1,7 @@
+backup/hermes-persistent/
+*.db
+*.db-shm
+*.db-wal
+*.lock
+.env
+
