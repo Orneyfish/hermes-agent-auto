@@ -30,7 +30,7 @@ planning skill, and a persistent local backup.
 ### Default local startup
 
 ```bash
-bash "/home/orneyfish/Projects/Hermes Agent Auto/scripts/start-hermes.sh"
+bash ./scripts/start-hermes.sh
 ```
 
 Starts Ollama if needed and launches Hermes with the local Ollama default.
@@ -38,7 +38,7 @@ Starts Ollama if needed and launches Hermes with the local Ollama default.
 ### Anthropic SSO / OAuth startup
 
 ```bash
-bash "/home/orneyfish/Projects/Hermes Agent Auto/scripts/start-hermes-anthropic.sh"
+bash ./scripts/start-hermes-anthropic.sh
 ```
 
 Launches the Hermes model picker so you can try the Anthropic OAuth login flow
@@ -47,7 +47,7 @@ from a real terminal session.
 ### Planning startup
 
 ```bash
-bash "/home/orneyfish/Projects/Hermes Agent Auto/scripts/start-hermes-planning.sh"
+bash ./scripts/start-hermes-planning.sh
 ```
 
 Starts Hermes with the reasoning model `qwen2.5-coder:14b-64k` for planning and
@@ -61,10 +61,10 @@ and identify high-risk decision points before execution.
 
 ## Persistent backup
 
-The full local Hermes backup is stored at:
+The full local Hermes backup is stored in this repository workspace at:
 
 ```text
-/home/orneyfish/Projects/Hermes Agent Auto/backup/hermes-persistent/
+./backup/hermes-persistent/
 ```
 
 This backup is intentionally kept out of git because it can contain large
